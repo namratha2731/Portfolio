@@ -50,28 +50,36 @@ const Contact = () => {
       {/* Enhanced 3D Background Elements */}
       <div className="absolute inset-0">
         {/* Floating 3D Models */}
-        <div className="floating-3d-model model-1" style={{top: '15%', right: '6%', animationDelay: '4s'}}></div>
-        <div className="floating-3d-model model-2" style={{top: '72%', left: '4%', animationDelay: '9s'}}></div>
-        <div className="floating-3d-model model-3" style={{bottom: '22%', right: '22%', animationDelay: '14s'}}></div>
-        <div className="floating-3d-model model-4" style={{top: '42%', left: '82%', animationDelay: '19s'}}></div>
-        <div className="floating-3d-model model-5" style={{top: '18%', left: '32%', animationDelay: '24s'}}></div>
-        
-        {/* Geometric Shapes */}
-        <div className="geometric-shape shape-1" style={{top: '20%', right: '18%', animationDelay: '3s'}}></div>
-        <div className="geometric-shape shape-2" style={{top: '85%', left: '14%', animationDelay: '5s'}}></div>
-        <div className="geometric-shape shape-3" style={{bottom: '32%', right: '32%', animationDelay: '7s'}}></div>
-        <div className="geometric-shape shape-4" style={{top: '62%', left: '72%', animationDelay: '9s'}}></div>
-        <div className="geometric-shape shape-5" style={{top: '28%', left: '88%', animationDelay: '11s'}}></div>
-        
-        {/* Advanced 3D Shapes */}
-        <div className="advanced-3d-shape cube" style={{top: '32%', left: '14%', animationDelay: '2s'}}></div>
-        <div className="advanced-3d-shape sphere" style={{top: '82%', right: '18%', animationDelay: '6s'}}></div>
-        <div className="advanced-3d-shape pyramid" style={{top: '52%', left: '92%', animationDelay: '10s'}}></div>
-        <div className="advanced-3d-shape torus" style={{bottom: '38%', left: '22%', animationDelay: '14s'}}></div>
-        
-        {/* Background Shapes */}
-        <div className="contact-bg-shape shape-1"></div>
-        <div className="contact-bg-shape shape-2"></div>
+        <div className="floating-3d-model model-1"></div>
+        <div className="floating-3d-model model-2"></div>
+        <div className="floating-3d-model model-3"></div>
+        <div className="floating-3d-model model-4"></div>
+        <div className="floating-3d-model model-5"></div>
+        <div className="geometric-shape shape-1"></div>
+        <div className="geometric-shape shape-2"></div>
+        <div className="geometric-shape shape-3"></div>
+        <div className="geometric-shape shape-4"></div>
+        <div className="geometric-shape shape-5"></div>
+        {/* Extra 3D and animated elements */}
+        <div className="absolute top-10 left-1/4 animate-bounce" style={{animationDelay: '1s'}}>
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="16" fill="#D4A5C0" opacity="0.3"/></svg>
+        </div>
+        <div className="absolute bottom-10 right-1/4 animate-pulse" style={{animationDelay: '2s'}}>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#98566D" opacity="0.2"/></svg>
+        </div>
+        <div className="absolute top-1/2 left-10 animate-spin-slow">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><polygon points="20,0 40,40 0,40" fill="#E8E0E5" opacity="0.15"/></svg>
+        </div>
+        <div className="absolute bottom-1/3 right-10 animate-bounce" style={{animationDelay: '3s'}}>
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><ellipse cx="14" cy="14" rx="14" ry="8" fill="#D4A5C0" opacity="0.12"/></svg>
+        </div>
+        <div className="absolute top-1/4 right-1/3 animate-pulse" style={{animationDelay: '1.5s'}}>
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="9" fill="#98566D" opacity="0.18"/></svg>
+        </div>
+        {/* Animated sparkles */}
+        <div className="absolute top-16 left-1/2 animate-pulse" style={{animationDelay: '2.5s'}}>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 0L12 8H20L13 12L15 20L10 15L5 20L7 12L0 8H8L10 0Z" fill="#F8F9FA" opacity="0.3"/></svg>
+        </div>
       </div>
 
       {/* Floating particles */}

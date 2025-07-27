@@ -16,6 +16,26 @@ const Hero = () => {
         <div className="geometric-shape shape-3"></div>
         <div className="geometric-shape shape-4"></div>
         <div className="geometric-shape shape-5"></div>
+        {/* Extra 3D and animated elements */}
+        <div className="absolute top-10 left-1/4 animate-bounce" style={{animationDelay: '1s'}}>
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="16" fill="#D4A5C0" opacity="0.3"/></svg>
+        </div>
+        <div className="absolute bottom-10 right-1/4 animate-pulse" style={{animationDelay: '2s'}}>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#98566D" opacity="0.2"/></svg>
+        </div>
+        <div className="absolute top-1/2 left-10 animate-spin-slow">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><polygon points="20,0 40,40 0,40" fill="#E8E0E5" opacity="0.15"/></svg>
+        </div>
+        <div className="absolute bottom-1/3 right-10 animate-bounce" style={{animationDelay: '3s'}}>
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><ellipse cx="14" cy="14" rx="14" ry="8" fill="#D4A5C0" opacity="0.12"/></svg>
+        </div>
+        <div className="absolute top-1/4 right-1/3 animate-pulse" style={{animationDelay: '1.5s'}}>
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="9" fill="#98566D" opacity="0.18"/></svg>
+        </div>
+        {/* Animated sparkles */}
+        <div className="absolute top-16 left-1/2 animate-pulse" style={{animationDelay: '2.5s'}}>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 0L12 8H20L13 12L15 20L10 15L5 20L7 12L0 8H8L10 0Z" fill="#F8F9FA" opacity="0.3"/></svg>
+        </div>
         
         {/* Advanced 3D Shapes */}
         <div className="advanced-3d-shape cube" style={{top: '20%', left: '10%', animationDelay: '0s'}}></div>
@@ -24,10 +44,11 @@ const Hero = () => {
         <div className="advanced-3d-shape torus" style={{bottom: '30%', left: '20%', animationDelay: '6s'}}></div>
       </div>
 
-      {/* Restore original heading */}
+      {/* Hero Content */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 opacity-0 animate-fadeInUp" style={{color: '#E8E0E5'}}>
-          Namratha <span className="text-gradient">Akshaya</span>
+          Hello I'm<br />
+          <span className="text-gradient">Namratha Akshaya</span>
         </h1>
         <p className="text-xl md:text-2xl mb-8 opacity-0 animate-fadeInUp animation-delay-300" style={{color: '#D4A5C0'}}>
           Full-Stack Developer & AI/ML Enthusiast
@@ -60,13 +81,13 @@ const Hero = () => {
         </div>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center opacity-0 animate-fadeInUp animation-delay-900">
-          <a href="#about" className="cta-button primary">
+          <button className="cta-button primary">
             View My Work
-          </a>
-          <button className="cta-button secondary">
+          </button>
+          <a href="/Namratha%20Akshaya%20-%20Resume.pdf" download className="cta-button secondary">
             <Download className="w-5 h-5 mr-2" />
             Download CV
-          </button>
+          </a>
           <a href="#contact" className="cta-button secondary">
             Get In Touch
           </a>

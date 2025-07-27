@@ -25,41 +25,35 @@ const About = () => {
       {/* Enhanced 3D Background Elements */}
       <div className="absolute inset-0">
         {/* Floating 3D Models */}
-        <div className="floating-3d-model model-1" style={{top: '10%', right: '5%', animationDelay: '2s'}}></div>
-        <div className="floating-3d-model model-2" style={{top: '70%', left: '8%', animationDelay: '7s'}}></div>
-        <div className="floating-3d-model model-3" style={{bottom: '15%', right: '12%', animationDelay: '12s'}}></div>
-        <div className="floating-3d-model model-4" style={{top: '40%', left: '75%', animationDelay: '17s'}}></div>
-        <div className="floating-3d-model model-5" style={{top: '20%', left: '25%', animationDelay: '22s'}}></div>
-        
-        {/* Geometric Shapes */}
-        <div className="geometric-shape shape-1" style={{top: '15%', right: '20%', animationDelay: '1s'}}></div>
-        <div className="geometric-shape shape-2" style={{top: '80%', left: '15%', animationDelay: '3s'}}></div>
-        <div className="geometric-shape shape-3" style={{bottom: '25%', right: '25%', animationDelay: '5s'}}></div>
-        <div className="geometric-shape shape-4" style={{top: '60%', left: '60%', animationDelay: '7s'}}></div>
-        <div className="geometric-shape shape-5" style={{top: '30%', left: '80%', animationDelay: '9s'}}></div>
-        
-        {/* Advanced 3D Shapes */}
-        <div className="advanced-3d-shape cube" style={{top: '25%', left: '10%', animationDelay: '0s'}}></div>
-        <div className="advanced-3d-shape sphere" style={{top: '75%', right: '20%', animationDelay: '3s'}}></div>
-        <div className="advanced-3d-shape pyramid" style={{top: '50%', left: '85%', animationDelay: '6s'}}></div>
-        <div className="advanced-3d-shape torus" style={{bottom: '40%', left: '30%', animationDelay: '9s'}}></div>
-        
-        {/* Background Shapes */}
-        <div className="about-bg-shape shape-1"></div>
-        <div className="about-bg-shape shape-2"></div>
-
-        {/* Creative Floating Elements */}
-        <div className="absolute top-20 left-10 animate-bounce" style={{animationDelay: '1s'}}>
-          <Sparkles className="w-6 h-6" style={{color: '#D4A5C0'}} />
+        <div className="floating-3d-model model-1"></div>
+        <div className="floating-3d-model model-2"></div>
+        <div className="floating-3d-model model-3"></div>
+        <div className="floating-3d-model model-4"></div>
+        <div className="floating-3d-model model-5"></div>
+        <div className="geometric-shape shape-1"></div>
+        <div className="geometric-shape shape-2"></div>
+        <div className="geometric-shape shape-3"></div>
+        <div className="geometric-shape shape-4"></div>
+        <div className="geometric-shape shape-5"></div>
+        {/* Extra 3D and animated elements */}
+        <div className="absolute top-10 left-1/4 animate-bounce" style={{animationDelay: '1s'}}>
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="16" fill="#D4A5C0" opacity="0.3"/></svg>
         </div>
-        <div className="absolute top-32 right-20 animate-pulse" style={{animationDelay: '2s'}}>
-          <Star className="w-4 h-4" style={{color: '#98566D'}} />
+        <div className="absolute bottom-10 right-1/4 animate-pulse" style={{animationDelay: '2s'}}>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#98566D" opacity="0.2"/></svg>
         </div>
-        <div className="absolute bottom-32 left-20 animate-bounce" style={{animationDelay: '3s'}}>
-          <Zap className="w-5 h-5" style={{color: '#E8E0E5'}} />
+        <div className="absolute top-1/2 left-10 animate-spin-slow">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><polygon points="20,0 40,40 0,40" fill="#E8E0E5" opacity="0.15"/></svg>
         </div>
-        <div className="absolute bottom-20 right-10 animate-pulse" style={{animationDelay: '4s'}}>
-          <Sparkles className="w-4 h-4" style={{color: '#D4A5C0'}} />
+        <div className="absolute bottom-1/3 right-10 animate-bounce" style={{animationDelay: '3s'}}>
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><ellipse cx="14" cy="14" rx="14" ry="8" fill="#D4A5C0" opacity="0.12"/></svg>
+        </div>
+        <div className="absolute top-1/4 right-1/3 animate-pulse" style={{animationDelay: '1.5s'}}>
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="9" fill="#98566D" opacity="0.18"/></svg>
+        </div>
+        {/* Animated sparkles */}
+        <div className="absolute top-16 left-1/2 animate-pulse" style={{animationDelay: '2.5s'}}>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 0L12 8H20L13 12L15 20L10 15L5 20L7 12L0 8H8L10 0Z" fill="#F8F9FA" opacity="0.3"/></svg>
         </div>
       </div>
 
@@ -180,25 +174,24 @@ const About = () => {
           {/* Photo space on the right with Enhanced 3D Effects */}
           <div className="flex justify-center lg:justify-end opacity-0 animate-fadeInUp animation-delay-900">
             <div className="relative group">
-              <div className="w-80 h-96 rounded-2xl bg-gradient-to-br from-gray-700 to-gray-800 border-2 border-gray-600 flex items-center justify-center shadow-2xl transform transition-all duration-500 group-hover:scale-105 group-hover:rotate-2 group-hover:shadow-3xl" 
-                   style={{background: 'linear-gradient(135deg, rgba(232, 224, 229, 0.1) 0%, rgba(212, 165, 192, 0.1) 100%)', borderColor: 'rgba(212, 165, 192, 0.3)'}}>
-                <div className="text-center">
-                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-gray-600 to-gray-700 flex items-center justify-center transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-12" 
-                       style={{background: 'linear-gradient(135deg, rgba(212, 165, 192, 0.2) 0%, rgba(152, 86, 109, 0.2) 100%)'}}>
-                    <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" style={{color: 'rgba(232, 224, 229, 0.6)'}}>
-                      <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <p className="text-sm" style={{color: 'rgba(232, 224, 229, 0.7)'}}>Photo Coming Soon</p>
+              <div className="w-96 h-96 rounded-full bg-gradient-to-br from-pink-300 via-purple-400 to-indigo-500 flex items-center justify-center shadow-2xl border-8 border-transparent group-hover:scale-105 group-hover:rotate-2 group-hover:shadow-3xl transition-all duration-500">
+                <div className="w-88 h-88 rounded-full bg-white flex items-center justify-center shadow-lg relative overflow-hidden">
+                  <img
+                    src="/namratha.jpeg"
+                    alt="Namratha Akshaya"
+                    className="w-full h-full object-cover rounded-full border-4 border-pink-200 shadow-xl animate-pulse-slow"
+                    style={{background: 'rgba(232, 224, 229, 0.2)'}}
+                  />
+                  {/* Glowing animated ring */}
+                  <div className="absolute inset-0 rounded-full pointer-events-none animate-spin-slow" style={{boxShadow: '0 0 40px 10px #D4A5C0, 0 0 80px 20px #98566D inset'}}></div>
                 </div>
               </div>
-              
               {/* Floating decorative elements around photo */}
-              <div className="absolute -top-4 -left-4 w-6 h-6 rounded-full bg-gradient-to-br animate-pulse" 
+              <div className="absolute -top-4 -left-4 w-8 h-8 rounded-full bg-gradient-to-br animate-pulse" 
                    style={{background: 'linear-gradient(135deg, #D4A5C0 0%, #98566D 100%)'}}></div>
-              <div className="absolute -bottom-4 -right-4 w-4 h-4 rounded-full bg-gradient-to-br animate-bounce" 
+              <div className="absolute -bottom-4 -right-4 w-6 h-6 rounded-full bg-gradient-to-br animate-bounce" 
                    style={{background: 'linear-gradient(135deg, #98566D 0%, #49466D 100%)', animationDelay: '1s'}}></div>
-              <div className="absolute top-1/2 -right-6 w-3 h-3 rounded-full bg-gradient-to-br animate-pulse" 
+              <div className="absolute top-1/2 -right-8 w-5 h-5 rounded-full bg-gradient-to-br animate-pulse" 
                    style={{background: 'linear-gradient(135deg, #E8E0E5 0%, #D4A5C0 100%)', animationDelay: '2s'}}></div>
             </div>
           </div>
