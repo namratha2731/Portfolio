@@ -4,7 +4,7 @@ import { Linkedin, Github, Download } from 'lucide-react';
 const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{background: 'linear-gradient(135deg, #192327 0%, #49466D 50%, #98566D 100%)'}}>
-      {/* 3D Background Elements */}
+      {/* Enhanced 3D Background Elements */}
       <div className="absolute inset-0">
         <div className="floating-3d-model model-1"></div>
         <div className="floating-3d-model model-2"></div>
@@ -16,6 +16,15 @@ const Hero = () => {
         <div className="geometric-shape shape-3"></div>
         <div className="geometric-shape shape-4"></div>
         <div className="geometric-shape shape-5"></div>
+        
+        {/* Enhanced Floating Elements */}
+        <div className="floating-element crystal" style={{top: '15%', left: '8%', animationDelay: '0s'}}></div>
+        <div className="floating-element orb" style={{top: '70%', right: '12%', animationDelay: '2s'}}></div>
+        <div className="floating-element sparkle" style={{top: '25%', right: '25%', animationDelay: '1s'}}></div>
+        <div className="floating-element crystal" style={{bottom: '20%', left: '15%', animationDelay: '3s'}}></div>
+        <div className="floating-element orb" style={{top: '45%', left: '85%', animationDelay: '4s'}}></div>
+        <div className="floating-element sparkle" style={{bottom: '40%', right: '30%', animationDelay: '2.5s'}}></div>
+        
         {/* Extra 3D and animated elements */}
         <div className="absolute top-10 left-1/4 animate-bounce" style={{animationDelay: '1s'}}>
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="16" fill="#D4A5C0" opacity="0.3"/></svg>
@@ -42,6 +51,10 @@ const Hero = () => {
         <div className="advanced-3d-shape sphere" style={{top: '60%', right: '15%', animationDelay: '2s'}}></div>
         <div className="advanced-3d-shape pyramid" style={{top: '40%', left: '80%', animationDelay: '4s'}}></div>
         <div className="advanced-3d-shape torus" style={{bottom: '30%', left: '20%', animationDelay: '6s'}}></div>
+        
+        {/* Morphing Shapes */}
+        <div className="absolute top-1/3 left-1/4 animate-morph-shape" style={{width: '80px', height: '80px', background: 'linear-gradient(135deg, rgba(212, 165, 192, 0.2), rgba(152, 86, 109, 0.2))'}}></div>
+        <div className="absolute bottom-1/4 right-1/3 animate-morph-shape" style={{width: '60px', height: '60px', background: 'linear-gradient(135deg, rgba(232, 224, 229, 0.15), rgba(212, 165, 192, 0.15))', animationDelay: '4s'}}></div>
       </div>
 
       {/* Hero Content */}
@@ -81,11 +94,11 @@ const Hero = () => {
         </div>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center opacity-0 animate-fadeInUp animation-delay-900">
-          <button className="cta-button primary">
+          <a href="#about" className="cta-button primary">
             View My Work
-          </button>
-          <a href="/Namratha%20Akshaya%20-%20Resume.pdf" download className="cta-button secondary">
-            <Download className="w-5 h-5 mr-2" />
+          </a>
+          <a href="/Namratha Akshaya.pdf" download className="cta-button secondary">
+            <Download className="w-4 h-4 mr-2" />
             Download CV
           </a>
           <a href="#contact" className="cta-button secondary">

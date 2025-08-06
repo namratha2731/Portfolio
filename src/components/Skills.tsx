@@ -49,6 +49,15 @@ const Skills = () => {
         <div className="geometric-shape shape-3"></div>
         <div className="geometric-shape shape-4"></div>
         <div className="geometric-shape shape-5"></div>
+        
+        {/* Enhanced Floating Elements */}
+        <div className="floating-element crystal" style={{top: '8%', left: '4%', animationDelay: '0s'}}></div>
+        <div className="floating-element orb" style={{top: '80%', right: '6%', animationDelay: '2s'}}></div>
+        <div className="floating-element sparkle" style={{top: '40%', right: '15%', animationDelay: '1s'}}></div>
+        <div className="floating-element crystal" style={{bottom: '12%', left: '8%', animationDelay: '3s'}}></div>
+        <div className="floating-element orb" style={{top: '60%', left: '92%', animationDelay: '4s'}}></div>
+        <div className="floating-element sparkle" style={{bottom: '45%', right: '22%', animationDelay: '2.5s'}}></div>
+        
         {/* Extra 3D and animated elements */}
         <div className="absolute top-10 left-1/4 animate-bounce" style={{animationDelay: '1s'}}>
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="16" fill="#D4A5C0" opacity="0.3"/></svg>
@@ -69,6 +78,10 @@ const Skills = () => {
         <div className="absolute top-16 left-1/2 animate-pulse" style={{animationDelay: '2.5s'}}>
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 0L12 8H20L13 12L15 20L10 15L5 20L7 12L0 8H8L10 0Z" fill="#F8F9FA" opacity="0.3"/></svg>
         </div>
+        
+        {/* Morphing Shapes */}
+        <div className="absolute top-1/6 left-1/7 animate-morph-shape" style={{width: '65px', height: '65px', background: 'linear-gradient(135deg, rgba(212, 165, 192, 0.2), rgba(152, 86, 109, 0.2))'}}></div>
+        <div className="absolute bottom-1/4 right-1/6 animate-morph-shape" style={{width: '45px', height: '45px', background: 'linear-gradient(135deg, rgba(232, 224, 229, 0.15), rgba(212, 165, 192, 0.15))', animationDelay: '4s'}}></div>
       </div>
 
       {/* Floating particles */}
@@ -99,7 +112,7 @@ const Skills = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 opacity-0 animate-fadeInUp animation-delay-600">
           {skillCategories.map((category, index) => (
-            <div key={index} className="skills-card">
+            <div key={index} className="enhanced-card animate-hover-lift">
               <h3 className="text-xl font-semibold mb-6" style={{color: category.color}}>
                 • {category.title}
               </h3>

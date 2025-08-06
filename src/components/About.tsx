@@ -35,6 +35,15 @@ const About = () => {
         <div className="geometric-shape shape-3"></div>
         <div className="geometric-shape shape-4"></div>
         <div className="geometric-shape shape-5"></div>
+        
+        {/* Enhanced Floating Elements */}
+        <div className="floating-element crystal" style={{top: '10%', left: '5%', animationDelay: '0s'}}></div>
+        <div className="floating-element orb" style={{top: '75%', right: '8%', animationDelay: '2s'}}></div>
+        <div className="floating-element sparkle" style={{top: '30%', right: '20%', animationDelay: '1s'}}></div>
+        <div className="floating-element crystal" style={{bottom: '15%', left: '10%', animationDelay: '3s'}}></div>
+        <div className="floating-element orb" style={{top: '50%', left: '90%', animationDelay: '4s'}}></div>
+        <div className="floating-element sparkle" style={{bottom: '35%', right: '25%', animationDelay: '2.5s'}}></div>
+        
         {/* Extra 3D and animated elements */}
         <div className="absolute top-10 left-1/4 animate-bounce" style={{animationDelay: '1s'}}>
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="16" fill="#D4A5C0" opacity="0.3"/></svg>
@@ -55,6 +64,10 @@ const About = () => {
         <div className="absolute top-16 left-1/2 animate-pulse" style={{animationDelay: '2.5s'}}>
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 0L12 8H20L13 12L15 20L10 15L5 20L7 12L0 8H8L10 0Z" fill="#F8F9FA" opacity="0.3"/></svg>
         </div>
+        
+        {/* Morphing Shapes */}
+        <div className="absolute top-1/4 left-1/6 animate-morph-shape" style={{width: '70px', height: '70px', background: 'linear-gradient(135deg, rgba(212, 165, 192, 0.2), rgba(152, 86, 109, 0.2))'}}></div>
+        <div className="absolute bottom-1/3 right-1/4 animate-morph-shape" style={{width: '50px', height: '50px', background: 'linear-gradient(135deg, rgba(232, 224, 229, 0.15), rgba(212, 165, 192, 0.15))', animationDelay: '4s'}}></div>
       </div>
 
       {/* Floating particles */}
@@ -98,7 +111,7 @@ const About = () => {
             
             {/* Three Cards with Enhanced 3D Effects */}
             <div className="grid gap-4 mt-8">
-              <div className="feature-card group transform transition-all duration-500 hover:scale-105 hover:rotate-1 hover:shadow-2xl">
+              <div className="enhanced-card group animate-hover-lift">
                 <div className="flex items-center space-x-4">
                   <div className="flex-shrink-0">
                     <div className="w-12 h-12 rounded-full bg-gradient-to-br flex items-center justify-center transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-12" 
@@ -119,7 +132,7 @@ const About = () => {
                 </div>
               </div>
               
-              <div className="feature-card group transform transition-all duration-500 hover:scale-105 hover:-rotate-1 hover:shadow-2xl">
+              <div className="enhanced-card group animate-hover-lift">
                 <div className="flex items-center space-x-4">
                   <div className="flex-shrink-0">
                     <div className="w-12 h-12 rounded-full bg-gradient-to-br flex items-center justify-center transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-12" 
@@ -140,7 +153,7 @@ const About = () => {
                 </div>
               </div>
               
-              <div className="feature-card group transform transition-all duration-500 hover:scale-105 hover:rotate-1 hover:shadow-2xl">
+              <div className="enhanced-card group animate-hover-lift">
                 <div className="flex items-center space-x-4">
                   <div className="flex-shrink-0">
                     <div className="w-12 h-12 rounded-full bg-gradient-to-br flex items-center justify-center transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-12" 

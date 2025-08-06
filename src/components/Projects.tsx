@@ -56,6 +56,15 @@ const Projects = () => {
         <div className="geometric-shape shape-3"></div>
         <div className="geometric-shape shape-4"></div>
         <div className="geometric-shape shape-5"></div>
+        
+        {/* Enhanced Floating Elements */}
+        <div className="floating-element crystal" style={{top: '12%', left: '6%', animationDelay: '0s'}}></div>
+        <div className="floating-element orb" style={{top: '78%', right: '10%', animationDelay: '2s'}}></div>
+        <div className="floating-element sparkle" style={{top: '35%', right: '18%', animationDelay: '1s'}}></div>
+        <div className="floating-element crystal" style={{bottom: '18%', left: '12%', animationDelay: '3s'}}></div>
+        <div className="floating-element orb" style={{top: '55%', left: '88%', animationDelay: '4s'}}></div>
+        <div className="floating-element sparkle" style={{bottom: '38%', right: '28%', animationDelay: '2.5s'}}></div>
+        
         {/* Extra 3D and animated elements */}
         <div className="absolute top-10 left-1/4 animate-bounce" style={{ animationDelay: '1s' }}>
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="16" fill="#D4A5C0" opacity="0.3" /></svg>
@@ -76,6 +85,10 @@ const Projects = () => {
         <div className="absolute top-16 left-1/2 animate-pulse" style={{ animationDelay: '2.5s' }}>
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 0L12 8H20L13 12L15 20L10 15L5 20L7 12L0 8H8L10 0Z" fill="#F8F9FA" opacity="0.3" /></svg>
         </div>
+        
+        {/* Morphing Shapes */}
+        <div className="absolute top-1/5 left-1/5 animate-morph-shape" style={{width: '75px', height: '75px', background: 'linear-gradient(135deg, rgba(212, 165, 192, 0.2), rgba(152, 86, 109, 0.2))'}}></div>
+        <div className="absolute bottom-1/3 right-1/5 animate-morph-shape" style={{width: '55px', height: '55px', background: 'linear-gradient(135deg, rgba(232, 224, 229, 0.15), rgba(212, 165, 192, 0.15))', animationDelay: '4s'}}></div>
       </div>
 
       {/* Floating particles */}
@@ -106,7 +119,7 @@ const Projects = () => {
 
         <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-10 opacity-0 animate-fadeInUp animation-delay-600">
           {projects.map((project, index) => (
-            <div key={index} className="project-card group w-full max-w-3xl mx-auto">
+            <div key={index} className="enhanced-card group w-full max-w-3xl mx-auto animate-hover-lift">
               <div className="relative overflow-hidden rounded-lg mb-6">
                 {/* Year label with calendar icon for all projects that have a year */}
                 {(index === 0 || index === 1 || index === 2 || index === 3) && ( // MODIFIED CONDITION
